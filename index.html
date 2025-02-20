@@ -41,28 +41,80 @@
            </ul>
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item text-color">
-                  <a class="nav-link" href="#">Home</a>
+                  <a class="nav-link" href="#slider">Home</a>
                 </li>
                 <li class="nav-item mr-2 text-color">
-                  <a class="nav-link" href="#">How it works</a>
+                  <a class="nav-link" href="#sec-2">How it works</a>
                 </li>
                 <li class="nav-item mr-2 text-color">
-                  <a class="nav-link" href="#">Packages/Pricing</a>
+                  <a class="nav-link" href="#Packages/Pricing">Packages/Pricing</a>
                 </li>
                 <li class="nav-item mr-2 text-color">
-                  <a class="nav-link" href="#">Contact us</a>
+                  <a class="nav-link" href="#contact">Contact us</a>
                 </li>
-                <li class="nav-item mr-2 text-color text-color-2">
-                  <a class="nav-link text-uppercase font-weight-bold login-btn account-btns" href="#">Log In</a>
-                </li>
-                <li class="nav-item mr-2 pt-1 text-color btn-custm">
-                  <a class="btn btn-primary px-3 py-1 text-uppercase account-btns " href="#">Sign Up</a>
-                </li>
+                <li class="nav-item text-color text-color-2">
+                  <a class="nav-link text-uppercase font-weight-bold login-btn account-btns" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Log In</a>
+              </li>
+              <li class="nav-item mr-2 pt-1 text-color btn-custm">
+                <a class="btn btn-primary px-3 py-1 text-uppercase account-btns" href="#" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</a>
+            </li>
             </ul>
           </div>
         </div>
       </div>
     </nav>
+     <!-- Login Modal -->
+     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <form>
+                      <div class="mb-3">
+                          <label for="email" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="email" required>
+                      </div>
+                      <div class="mb-3">
+                          <label for="password" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="password" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary w-100">Login</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Signup Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label for="signupName" class="form-label">Full Name</label>
+                      <input type="text" class="form-control" id="signupName" placeholder="Enter your full name">
+                  </div>
+                  <div class="mb-3">
+                      <label for="signupEmail" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="signupEmail" placeholder="Enter your email">
+                  </div>
+                  <div class="mb-3">
+                      <label for="signupPassword" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="signupPassword" placeholder="Create a password">
+                  </div>
+                  <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+              </form>
+          </div>
+      </div>
+  </div>
+</div>
   </header>
    
      <!-- End navbar -->
@@ -99,7 +151,7 @@
         <!--End Hero Section-->
 
         <!--Start Section 2-->
-        <section class="mt-5  sec-2 text-center">
+        <section id="sec-2" class="mt-5  sec-2 text-center">
           <h1>HOW IT WORKS</h1>
           <div class="container">
             <div class="row justify-content-between align-items-center">
@@ -314,10 +366,10 @@
       <a href="" class="navbar-brand"><img src="./img/logo.png" alt=""></a>
     </div>
     <ul class="footer-links d-flex justify-content-center align-items-center text-center mt-2">
-      <li><a href="" class="p-4 text-center">Home</a></li>
-      <li><a href="" class="p-4 text-center">How it works</a></li>
-      <li><a href="" class="p-4 text-center">Packages/Pricing</a></li>
-      <li><a href="" class="p-4 text-center">Contact us</a></li>
+      <li><a href="#slider" class="p-4 text-center">Home</a></li>
+      <li><a href="#sec-2" class="p-4 text-center">How it works</a></li>
+      <li><a href="#Packages/Pricing" class="p-4 text-center">Packages/Pricing</a></li>
+      <li><a href="#contact" class="p-4 text-center">Contact us</a></li>
       <li><a href="" class="p-4 text-center">Terms And Conditions</a></li>
     </ul>
   </div>
@@ -325,6 +377,6 @@
 
 
     
-    <script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
+  <script src="./bootstrap-5.3.1-dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
